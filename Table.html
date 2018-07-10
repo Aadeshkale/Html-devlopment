@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table example</title>
+    <style>
+        h1{
+           color: green;
+            margin: 5px;
+            padding: 5px;
+        }
+        table,th,td{
+            background: lightblue;
+            border: solid blueviolet ;
+            border-collapse: collapse;
+            text-align: center;
+            color: blue;
+
+        }
+        th{
+           background: orange;
+        }
+        tr{
+            background: red;
+        }
+
+
+
+
+    </style>
+</head>
+    <body>
+        <div>
+            <h1>Simple Table Example</h1>
+              <table style="width: 100%">
+                  <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Name</th>
+                        <th>Mobile no</th>
+                        <th>Address</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Aadesh</td>
+                            <td>84.....825</td>
+                            <td>Aurangabad</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sachin</td>
+                            <td>84.....825</td>
+                            <td>Aurangabad</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Shraddha</td>
+                            <td>84.....825</td>
+                            <td>Aurangabad</td>
+                        </tr>
+
+                  </tbody>
+              </table>
+
+        </div>
+        <div>
+            <h1> Table Example with colspan</h1>
+            <table style="width: 100%">
+                <thead>
+                <tr>
+                    <th colspan="2">Sr.no And name</th>
+                   <!-- <th>Name</th>  -->
+                    <th>Mobile no</th>
+                    <th>Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Aadesh</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sachin</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shraddha</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <h1> Table Example with rowspan</h1>
+            <table style="width: 100%">
+                <thead>
+                <tr>
+                    <th >Sr.no And name</th>
+                     <th>Name</th>
+                    <th>Mobile no</th>
+                    <th>Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2" >1</td>
+                    <td>Aadesh</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+                <tr>
+                 <!--   <td>2</td> -->
+                    <td>Sachin</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shraddha</td>
+                    <td>84.....825</td>
+                    <td>Aurangabad</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <h1> Custom Table </h1>
+            <table style="width: 100%">
+                <thead>
+                    <tr>
+                        <th >Sr.no And name</th>
+                        <th>Name</th>
+                        <th>Mobile no</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" >1</td>
+                        <td>Aadesh</td>
+                        <td>84.....825</td>
+                        <td>Aurangabad</td>
+                    </tr>
+                    <tr>
+                        <!--   <td>2</td> -->
+                        <td>Sachin</td>
+                        <td>84.....825</td>
+                        <td>Aurangabad</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="background: lightsalmon">Shraddha</td>
+                        <td>84.....825</td>
+                        <td>Aurangabad</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </body>
+</html>
