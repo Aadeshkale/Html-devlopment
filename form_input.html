@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form input</title>
+    <style>
+        h1,h2{
+            color: rebeccapurple;
+            margin: 5px;
+            padding: 5px;
+        }
+        body{
+            font-family: "Comic Sans MS";
+
+            
+
+        }
+        form{
+            background-color: lightgreen;
+            box-shadow: 2px 2px 5px red;
+            width: 400px;
+            color: green;
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Form Input Example</h1>
+            <h2>Textarea</h2>
+                <form>
+                    <label for="comm">Comments</label>
+                    <textarea name="comm"></textarea>
+                </form>
+            <h2>Radio Button Example</h2>
+                   <form>
+                       <p>Is html Easy?</p>
+                       <input type="radio" value="yes" name="status" >
+                       <label for="yes">yes</label>
+                       <input type="radio" value="no" name="status" >
+                       <label for="no">NO</label>
+                   </form>
+            <h2>Check Box Example</h2>
+                <form>
+                    <p>Are you agree terms and conditions</p>  <input type="checkbox">
+                    <input type="submit" value="Agree">
+                </form>
+            <h2>File example</h2>
+                <form>
+                    <label for="file">Choose:</label>
+                    <input type="file" name="file">
+                </form>
+            <h2>Color chooser</h2>
+                <form>
+                    <label for="color">Choose:</label>
+                    <input type="color" name="color">
+                </form>
+            <h2>Date chooser</h2>
+                <form>
+                    <label for="color">Choose:</label>
+                    <input type="date" name="color">
+                </form>
+            <h2>Time</h2>
+                <form>
+                    <label for="time">Time</label>
+                    <input type="time">
+                </form>
+            <h2>Range selector</h2>
+                <form>
+                    <label for="range">Range</label>
+                    <input type="range">
+                </form>
+            <h2>Search</h2>
+                <form>
+                    <label for="time">Search</label>
+                    <input type="search">
+                </form>
+    </div>
+</body>
+</html>
