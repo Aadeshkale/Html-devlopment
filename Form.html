@@ -13,7 +13,7 @@
             color: purple;
             width: 400px;
         }
-        form{
+        form,form2{
             background: orangered;
             width: 400px;
             padding: 5px;
@@ -40,9 +40,9 @@
      <h2> Simple Form</h2>
         <form>
             <label for="uid">UserName:</label>
-            <input type="text"  name="uid"><br>
-            <label for="pass">Password</label>
-            <input type="password"  name="pass"><br>
+            <input type="text" id="uid"><br>
+            <label for="passw">Password</label>
+            <input type="password"id="passw"><br>
             <input type="submit" value="login">
             <input type="reset" value="Reset">
         </form>
@@ -51,10 +51,10 @@
                  <table>
                      <tr>
                          <td>
-                             <label for="uid">UserName:</label>
+                             <label for="UserName">UserName:</label>
                          </td>
-                           <td>
-                               <input type="text" name="uid" >
+                         <td>
+                               <input type="text" id="UserName" >
                            </td>
                      </tr>
                      <tr>
@@ -62,7 +62,7 @@
                              <label for="pass">password:</label>
                          </td>
                          <td>
-                             <input type="password" name="pass" >
+                             <input type="password" id="pass" >
                          </td>
                      </tr>
                      <tr>
@@ -78,7 +78,7 @@
      <h2>Select tag example</h2>
             <form id="form1">
                <label for="lang">Select Technology</label>
-                <select  name="lang">
+                <select  id="lang">
                     <option>HTML</option>
                     <option>CSS</option>
                     <option>JS</option>
@@ -88,7 +88,7 @@
      <h2>Select With Group Example</h2>
             <form style="text-align: center">
                <label for="ok">Select:</label>
-                <select name="ok" >
+                <select id="ok" >
                     <optgroup label="Fornt-End">
                         <option>HTML</option>
                         <option>CSS</option>
@@ -96,12 +96,12 @@
                     <optgroup label="MID-End">
                         <option>JS</option>
                         <option>PHP</option>
-                        option>PYTHON</option>
+                        <option>PYTHON</option>
                     </optgroup>
                 </select>
             </form>
      <h2>Datalist tag example</h2>
-          <form id="form1">
+          <form id="form2">
               <input list="tech">
               <datalist id="tech">
                   <option>HTML</option>
