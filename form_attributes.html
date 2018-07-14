@@ -10,15 +10,25 @@
             width: 400px;
             text-align: center;
             border-radius: 15px;
-            box-shadow:3px 3px 3px yellow;
+            box-shadow:3px 3px 3px blue;
         }
         body{
             background-image: url("img/ship.jpg");
+            margin: 40px;
+            padding: 20px;
         }
         form{
             background: linear-gradient( to right,lightblue,cornflowerblue,blue);
             width: 400px;
             font-family: "Comic Sans MS";
+            box-shadow: 4px 4px 4px purple;
+            color: red;
+        }
+        input,textarea{
+            border-radius: 10px;
+
+        }
+        table{
 
 
         }
@@ -26,108 +36,163 @@
 </head>
 <body>
     <div>
-        <h1>Regitration Form</h1>
-        <form>
-            <table>
-                <tr>
-                    <td>
-                        <label for="name">Name:</label>
-                    </td>
-                    <td>
-                        <input type="text" id="name" name="uname" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email</label>
-                    </td>
-                    <td>
-                        <input type="email" id="email" name="email" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="mob">Mobile no</label>
-                    </td>
-                    <td>
-                        <input type="number" id="mob" name="mobile" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label >Gender</label>
-                    </td>
-                    <td>
+        <table width="100%">
+          <div>
+              <tr>
+                   <td>
+                    <h1>Regitration Form</h1>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="name">Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="uname" required >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="mob">Mobile no</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="mob" name="mobile" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label >Gender</label>
+                                </td>
+                                <td>
 
-                        <input type="radio" name="gen" value="male" >
-                        <label >Male</label>
-                        <input type="radio" name="gen" value="female">
-                        <label >female</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Add">Address</label>
-                    </td>
-                    <td>
-                        <textarea rows="2" cols="30" id="add" name="address" required ></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="birth">Birth Day</label>
-                    </td>
-                    <td>
-                        <input type="date" id="birth" name="birthday">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="city">City</label>
-                    </td>
-                    <td>
-                        <select id="city" name="city">
-                            <option>Aurangabad</option>
-                            <option>Pune</option>
-                            <option>Nashik</option>
-                            <option>Latur</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="tech">Technology known</label>
-                    </td >
-                    <td id="tech">
-                        <input type="checkbox"  value="html"> HTML
-                        <input type="checkbox"  value="css"> CSS
-                        <input type="checkbox"  value="bs"> BS
-                        <input type="checkbox"  value="js"> JS<br>
-                        <input type="checkbox"  value="ajs"> AJS
-                        <input type="checkbox"  value="ajax"> Ajax
+                                    <input type="radio" name="gen" value="male" >
+                                    <label >Male</label>
+                                    <input type="radio" name="gen" value="female">
+                                    <label >female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Add">Address</label>
+                                </td>
+                                <td>
+                                    <textarea rows="2" cols="30" id="add" name="address" required ></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="birth">Birth Day</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="birth" name="birthday">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="city">City</label>
+                                </td>
+                                <td>
+                                    <select id="city" name="city">
+                                        <option>Aurangabad</option>
+                                        <option>Pune</option>
+                                        <option>Nashik</option>
+                                        <option>Latur</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tech">Technology known</label>
+                                </td >
+                                <td id="tech">
+                                    <input type="checkbox"  value="html"> HTML
+                                    <input type="checkbox"  value="css"> CSS
+                                    <input type="checkbox"  value="bs"> BS
+                                    <input type="checkbox"  value="js"> JS<br>
+                                    <input type="checkbox"  value="ajs"> AJS
+                                    <input type="checkbox"  value="ajax"> Ajax
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="file">ID proof</label>
-                    </td>
-                    <td>
-                        <input type="file" id="file" name="file">
-                    </td>
-                </tr>
-                <tr>
-                    <td >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="file">ID proof</label>
+                                </td>
+                                <td>
+                                    <input type="file" id="file" name="file">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
 
-                    </td>
-                    <td  align="right">
-                        <input type="submit" value="Register" name="submit">
-                        <input type="reset" value="Reset" name="reset">
-                    </td>
-                </tr>
+                                </td>
+                                <td  align="right">
+                                    <input type="submit" value="Register" name="submit">
+                                    <input type="reset" value="Reset" name="reset">
+                                </td>
+                            </tr>
 
-            </table>
-        </form>
+                        </table>
+                    </form>
+                   </td>
+
+                  <td>
+
+                      <h1>Login Form</h1>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label id="uemail">Enter ur email</label>
+                                    </td>
+                                    <td>
+                                        <input type="email"  name="uemail" required>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label id="upassw">Enter ur Pasword</label>
+                                    </td>
+                                    <td>
+                                        <input type="password"  name="upasswd" required>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                    </td>
+                                    <td align="right">
+                                        <input type="submit" value="Login">
+                                        <input type="reset" value="Reset">
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </form>
+
+
+
+                  </td>
+              </tr>
+
+         </div>
+
+
+
+
+        </table>
     </div>
 </body>
 </html>
