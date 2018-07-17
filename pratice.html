@@ -6,125 +6,56 @@
     <style>
      body{
          font-family:"Comic Sans MS";
+
      }
-        h1{
+        h1,h2{
+            font-family: "Old English Text MT";
             color: orangered;
         }
         span{
 
             padding: 2px;
         }
-        img{
+        main{
+            background-image: url("img/background.jpg");
+            background-size: cover;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+        audio{
+
+        }
+        video{
             width: 500px;
-            height: 300px;
-            box-shadow: 3px 3px 3px red;
-            border-radius: 10%;
+            height: 400px;
+
+
 
         }
-        table,td{
-            border: solid crimson;
-            border-collapse: collapse;
+        div{
+            width: 500px;
+            border: solid red;
         }
-        thead {
-            background: lightseagreen;
-        }
-        tbody tr{
-            background: lightgreen;
-        }
-
 
 
     </style>
 </head>
 <body >
-    <div >
+
+    <main>
         <h1><span style=" background: lightgreen">PLay</span><span style="background: lightgrey">mind:</span></h1>
-        <h2>Table example</h2>
-           <table width="50%">
-               <thead>
-                    <tr>
-                        <td>Sr.no</td>
-                        <td>Name</td>
-                        <td>Address</td>
-                    </tr>
-               </thead>
-               <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>shraddha</td>
-                        <td>Prakashnagar</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Kunnal</td>
-                        <td>Ramnager</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>sachin</td>
-                        <td>tornanagar</td>
-                    </tr>
-
-               </tbody>
-           </table>
-        <h2>Table example with colspan</h2>
-        <table width="50%">
-            <thead>
-            <tr>
-                <td >Sr.no</td>
-                <td style='text-align: center;' colspan="2">Name and address</td>
-
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>shraddha</td>
-                <td>Prakashnagar</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Kunnal</td>
-                <td>Ramnager</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>sachin</td>
-                <td>tornanagar</td>
-            </tr>
-
-            </tbody>
-        </table>
-        <h2>Table example with rowspan</h2>
-        <table width="50%">
-            <thead>
-            <tr>
-                <td >Sr.no</td>
-                <td>Name</td>
-                <td>address</td>
-
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td rowspan="2">1</td>
-                <td>shraddha</td>
-                <td>Prakashnagar</td>
-            </tr>
-            <tr>
-
-                <td>Kunnal</td>
-                <td>Ramnager</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>sachin</td>
-                <td>tornanagar</td>
-            </tr>
-
-            </tbody>
-        </table>
-
+        <h2>Html <span style="color: crimson">&lt;video&gt;</span>tag</h2>
+    </main>
+    <h2>audio player</h2>
+    <div>
+        <audio controls>
+            <source src="media/Krishna%20Flute.mp3">
+        </audio>
+     </div>
+    <h2>vedio player</h2>
+    <div>
+        <video controls src="media/lonavala.mp4"></video>
 
     </div>
 </body>
