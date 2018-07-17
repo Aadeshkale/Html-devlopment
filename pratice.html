@@ -4,44 +4,128 @@
     <meta charset="UTF-8">
     <title>Pratice</title>
     <style>
+     body{
+         font-family:"Comic Sans MS";
+     }
         h1{
-            font-family: "Comic Sans MS";
-            color: green;
-            text-shadow: 3px 3px 3px yellow;
+            color: orangered;
         }
-        body{
-            font-family: "Comic Sans MS";
+        span{
+
+            padding: 2px;
         }
-        section{
-            background: orangered;
-            padding: 10px;
-            border-radius: 20px;
+        img{
+            width: 500px;
+            height: 300px;
+            box-shadow: 3px 3px 3px red;
+            border-radius: 10%;
+
         }
-        article{
-            background: green;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 20px;
+        table,td{
+            border: solid crimson;
+            border-collapse: collapse;
         }
+        thead {
+            background: lightseagreen;
+        }
+        tbody tr{
+            background: lightgreen;
+        }
+
+
 
     </style>
 </head>
 <body >
     <div >
-        <h1>Let's go for section</h1>
-        <section>
-            <h2>Sport's</h2>
-                <h4>Footboll</h4>
-                <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto labore nisi, porro quasi quibusdam sapiente! Accusantium ad consequatur dolor dolore, id itaque laborum maiores possimus provident quas quia quis, ullam voluptates. Dicta dolorem expedita ipsum, necessitatibus nemo nostrum officia ullam voluptatem. Beatae esse iste laborum nisi quis recusandae sequi vitae!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur cum deleniti expedita fuga in ipsum iure nihil repellat. Alias amet culpa cum enim error eveniet fugiat minus nesciunt optio, quasi, quis vel vitae voluptatem! Aperiam dicta odio saepe sequi?</p>
-                </article>
-            <h4>Cricket</h4>
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto labore nisi, porro quasi quibusdam sapiente! Accusantium ad consequatur dolor dolore, id itaque laborum maiores possimus provident quas quia quis, ullam voluptates. Dicta dolorem expedita ipsum, necessitatibus nemo nostrum officia ullam voluptatem. Beatae esse iste laborum nisi quis recusandae sequi vitae!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequatur cum deleniti expedita fuga in ipsum iure nihil repellat. Alias amet culpa cum enim error eveniet fugiat minus nesciunt optio, quasi, quis vel vitae voluptatem! Aperiam dicta odio saepe sequi?</p>
-            </article>
-        </section>
+        <h1><span style=" background: lightgreen">PLay</span><span style="background: lightgrey">mind:</span></h1>
+        <h2>Table example</h2>
+           <table width="50%">
+               <thead>
+                    <tr>
+                        <td>Sr.no</td>
+                        <td>Name</td>
+                        <td>Address</td>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>shraddha</td>
+                        <td>Prakashnagar</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kunnal</td>
+                        <td>Ramnager</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>sachin</td>
+                        <td>tornanagar</td>
+                    </tr>
+
+               </tbody>
+           </table>
+        <h2>Table example with colspan</h2>
+        <table width="50%">
+            <thead>
+            <tr>
+                <td >Sr.no</td>
+                <td style='text-align: center;' colspan="2">Name and address</td>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>shraddha</td>
+                <td>Prakashnagar</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kunnal</td>
+                <td>Ramnager</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>sachin</td>
+                <td>tornanagar</td>
+            </tr>
+
+            </tbody>
+        </table>
+        <h2>Table example with rowspan</h2>
+        <table width="50%">
+            <thead>
+            <tr>
+                <td >Sr.no</td>
+                <td>Name</td>
+                <td>address</td>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>shraddha</td>
+                <td>Prakashnagar</td>
+            </tr>
+            <tr>
+
+                <td>Kunnal</td>
+                <td>Ramnager</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>sachin</td>
+                <td>tornanagar</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+
     </div>
 </body>
 </html>
